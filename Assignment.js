@@ -1,35 +1,32 @@
-let a = "Wajir";    // global variable
-function gift(){
-"use strict"
-let b = "receiver";  // local variable
-console.log(a);
-console.log(b);
-}
-gift();   // Wajir/receiver
 
 
-function outer(){
-var a = 20;
-function inner(){    // nested function
-    var b =12;
-    console.log(b);
 
+
+let names = {  // object
+  fname: "Mandek",
+  lname: "Adow"
 }
 
-inner();
-console.log (a);
+console.log(names);
+
+
+
+function Person () {  // constructor function
+  this.name = 'Abdi',
+  this.age = 35
+
 
 }
-outer();
-var x =15;
-foo();   // declaration is hoisted
 
-function foo(){
-var a =4;
-console.log(a);
-var x;          // declaration is hoisted on the top of foo()
-}
-console.log(x);
+const person =new person();
+
+
+
+
+person.prototype.gender= 'male'; // adding property to a constructor function
+
+console.log(person.prototype);
+
 
 
 
